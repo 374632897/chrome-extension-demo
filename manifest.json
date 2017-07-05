@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name":"My app",
+  "description":"My custom app",
+  "version":"1.0.0",
+  "icons": {
+    "16": "images/github16.png",
+    "48": "images/github48.png",
+    "128": "images/github128.png"
+  },
+  "browser_action":{
+    "default_icon":"images/github48.png",
+    "default_title":"My custom chrome extention"
+  },
+  "content_scripts":[{
+      "matches": ["https://wiki.sankuai.com/*"],
+      "css": ["css/index.css"]
+  }]
+}
